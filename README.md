@@ -18,8 +18,10 @@ Once the pod is running, run the following command to port forward zeppelin UI
 ```bash
 kubectl port-forward services/zeppelin-server 8080:80 -n <namespace>
 ```
+Navigate to [http://localhost:8080/](http://localhost:8080/) 
 
 ## Lakehouse UI
 ```bash
 kubectl port-forward services/lakehouse 8000:80 -n <namespace>
 ```
+Navigate to [http://localhost:8000/](http://localhost:8000/) 
