@@ -105,7 +105,7 @@ spec:
             path: nginx.conf
       containers:
       - name: zeppelin-server
-        image: cuebook/zeppelin-server:0.9.0.1
+        image: cuebook/zeppelin-server:0.9.0
         command: ["sh", "-c"]
         args:
           - curl https://raw.githubusercontent.com/vikrantcue/lakehouse-templates/main/Oracle%20To%20S3%20Lakehouse.zpln -o $(ZEPPELIN_HOME)/notebook/"Oracle To S3 Lakehouse_2G1N7JTYB.zpln" && $(ZEPPELIN_HOME)/bin/zeppelin.sh
